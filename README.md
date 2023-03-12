@@ -1,2 +1,2 @@
-# true_or_false_game
+# True or false game
 There will be something here. A little later...
