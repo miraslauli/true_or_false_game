@@ -11,7 +11,7 @@ class TrueOrFalse:
         self.current_question: int = 0  # type: ignore
         self.game_status = GameStatus.NOT_STARTED
 
-    def question_generation(self) -> str:
+    def question_generation(self) -> str:   # Should add a description of the functions
 
         with open(self.game_file, "r") as game_file:
             self.questions = {i: line.rstrip().split(";") for i, line in enumerate(game_file)}
