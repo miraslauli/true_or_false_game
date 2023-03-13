@@ -67,4 +67,3 @@ class TrueOrFalse:
     def check_game_status(self):
         return self.game_status
 
-s = 'How much I love learning. Studying makes you feel dumb nonstop.'
