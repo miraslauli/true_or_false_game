@@ -66,4 +66,3 @@ class TrueOrFalse:
     @property
     def check_game_status(self):
         return self.game_status
-
