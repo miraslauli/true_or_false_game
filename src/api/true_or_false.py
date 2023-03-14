@@ -1,14 +1,15 @@
 from pathlib import Path
 from src.enums import GameStatus
 from src.errors import InvalidOperationException
+from src.config import number_of_attempts
 
 
 class TrueOrFalse:
     def __init__(self):
-        self.questions: dict[int: list[str]] = {}  # type: ignore
+        self.questions: dict[int: list[str]] = {}
         self.game_file = Path("questions_data", "Questions.csv")
-        self.number_of_attempts: int = 3  # type: ignore
-        self.current_question: int = 0  # type: ignore
+        self.number_of_attempts: int = number_of_attempts
+        self.current_question: int = 0
         self.game_status = GameStatus.NOT_STARTED
 
     def question_generation(self) -> str:

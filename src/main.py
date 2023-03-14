@@ -13,4 +13,3 @@ while game.game_status == GameStatus.IN_PROGRESS:
     print(game.question())
     print(game.give_answer(input("Enter your answer: ")))
     game.next_question()
-
