@@ -22,12 +22,10 @@ def main():
 
         if game.game_status == GameStatus.WON:
             print("You win!")
-            break
         elif game.game_status == GameStatus.LOST:
             print("You lost!")
-            break
-
-        print(f"The next question is number {game.current_question + 1}")
+        elif game.game_status == GameStatus.IN_PROGRESS:
+            print(f"The next question is number {game.current_question + 1}")
 
 
 main()
